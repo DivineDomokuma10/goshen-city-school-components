@@ -1,27 +1,27 @@
 import "./App.css";
-import Invoice from "./components/invoice-components/Invoice";
-import Profile from "./components/invoice-components/Profile";
-import InvoiceContainer from "./components/invoice-components/InvoiceContainer";
-import invoiceContent from "./mock-data/invoiceData";
-import InvoiceData from "./components/invoice-components/InvoiceData";
+import Invoice from "./components/invoice/Invoice";
+import Profile from "./components/invoice/Profile";
+import InvoiceContent from "./mock-data/invoiceData";
+import InvoiceData from "./components/invoice/InvoiceData";
+import InvoiceContainer from "./components/invoice/InvoiceContainer";
 
 function App() {
-  console.log(invoiceContent);
   return (
     <main className="app">
       <InvoiceContainer>
         <Profile
-          email="divine@gmail.com"
-          phone="+234 9071214921"
-          name="Divine Domokuma"
+          email={InvoiceContent.Email}
+          phone={`+234 ${InvoiceContent["Phone No"].slice(1)}`}
+          name={InvoiceContent.Name}
         />
+
         <Invoice>
-          {Object.keys(invoiceContent).map((content, index) => (
+          {Object.keys(InvoiceContent).map((content, index) => (
             <InvoiceData
               key={content}
               index={index}
               dataKey={content}
-              data={invoiceContent[content]}
+              data={InvoiceContent[content]}
             />
           ))}
         </Invoice>

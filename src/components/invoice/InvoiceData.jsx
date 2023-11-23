@@ -8,7 +8,7 @@ const InvoiceData = ({ index, dataKey, data }) => {
       px="2"
       borderBottom="1px"
       borderColor="gray.400"
-      bg={index % 2 == 0 && "gray.100"}
+      bg={index % 2 == 0 ? "gray.100" : "" }
       justifyContent="space-between"
     >
       <Text>{dataKey}:</Text>

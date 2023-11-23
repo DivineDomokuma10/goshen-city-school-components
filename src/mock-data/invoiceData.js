@@ -1,4 +1,4 @@
-const invoiceContent = {
+const InvoiceContent = {
   Name: "Divine Domokuma",
   "Payment Type": "Call-up/Exclusion Letter Printing",
   "Payment Status": "Pending (Transaction Pending)",
@@ -12,4 +12,4 @@ const invoiceContent = {
   Amount: 2734.59,
 };
 
-export default invoiceContent;
+export default InvoiceContent;

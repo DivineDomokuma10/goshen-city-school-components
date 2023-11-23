@@ -6,7 +6,7 @@ const Profile = ({ name, email, phone }) => {
     <Flex
       p="4"
       h="fit-content"
-      rowGap="5px"
+      rowGap="10px"
       border="1px"
       direction="column"
       borderRadius="5px"
