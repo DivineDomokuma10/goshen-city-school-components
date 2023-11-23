@@ -10,7 +10,7 @@ Technologies for building includes:
 
 ## COMPONENT'S STRUCTURE
 
-### CONSTITUES:
+### COMPONENTS:
 
 The **_INVOICE COMPONENT_** is made up of four sub-components, which includes:
 
@@ -34,7 +34,7 @@ which all ecapsulates logics for consuming and rendering user data that has been
 </InvoiceContainer>
 ```
 
-The about code snippet shows the hierachy of components.
+The code snippet above shows the hierachy of components.
 
 - **_InvoiceContainer:_**
   Top level component, which acts as a wrappper component.

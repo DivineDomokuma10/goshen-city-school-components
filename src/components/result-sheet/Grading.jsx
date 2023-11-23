@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const GradeKey = () => {
+const Grading = () => {
   return (
     <Flex w={"full"} border={"1px"} borderColor={"rgba(0,0,0,0.2)"}>
       <Flex
@@ -117,4 +117,4 @@ const GradeKey = () => {
   );
 };
 
-export default GradeKey;
+export default Grading;
